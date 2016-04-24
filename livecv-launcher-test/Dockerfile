@@ -1,5 +1,5 @@
 # 
-# Live CV Dockerfile
+# Live CV Launcher Dockerfile
 #
 
 # Pull base image
