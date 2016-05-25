@@ -1,7 +1,7 @@
 # Live CV Docker files
 
 ```
-docker run -e DISPLAY=:99 -t -i -p 5900 livecv/launcher-test bash
+docker run -t -i -p 5900 -v /livecv:/path/to/livecv livecv
 ```
 
 ```
