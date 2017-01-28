@@ -9,7 +9,7 @@ sudo docker build -t livecv/launcher-test .
 ### Running image:
 
 ```
-docker run -t -i -p 5900 -v /livecv:/path/to/livecv livecv
+docker run -t -i -p 5900 -v /<local_livecv_path>:/<remove_livecv_path> livecv
 ```
 
 ### Connecting to an image:
