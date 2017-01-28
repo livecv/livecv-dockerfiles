@@ -1,17 +1,28 @@
 # Live CV Docker files
 
-### Building a docker image:
+The 2 images are used to test the standalone version of livecv (launcher based) and the minimal 
+version for compatibility issues.
 
-Building livecv launcher test imge
+### Building the docker images:
+
+Building livecv launcher test image: 
 
 ```
+cd livecv-launcher-test
 sudo docker build -t livecv/launcher-test .
 ```
 
-### Running image:
+Building livecv test image:
 
 ```
-docker run -t -i -p 5900 -v /path/to/livecv:/livecv livecv
+cd livecv
+sudo docker build -t livecv/test .
+```
+
+### Running an image:
+
+```
+docker run -t -i -p 5900 -v /<local_livecv_path>:/<remove_livecv_path> livecv/launcher-test
 ```
 
 ### Connecting to an image:
