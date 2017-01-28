@@ -17,7 +17,7 @@ RUN dpkg-divert --local --rename --add /sbin/initctl && ln -sf /bin/true /sbin/i
 RUN apt-get install -y lxde
 
 # Install livecv requirements
-RUN apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libjpeg-dev libpng-dev libdc1394-22-dev
+RUN apt-get update -y && apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libjpeg-dev libpng-dev libdc1394-22-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 
 # Install global requirements
 RUN apt-get install -y libgl1-mesa-dev x11vnc xvfb wget 

@@ -2,6 +2,8 @@
 
 ### Building a docker image:
 
+Building livecv launcher test imge
+
 ```
 sudo docker build -t livecv/launcher-test .
 ```
@@ -9,7 +11,7 @@ sudo docker build -t livecv/launcher-test .
 ### Running image:
 
 ```
-docker run -t -i -p 5900 -v /livecv:/path/to/livecv livecv
+docker run -t -i -p 5900 -v /path/to/livecv:/livecv livecv
 ```
 
 ### Connecting to an image:
